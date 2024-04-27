@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import { Chivo } from 'next/font/google'
 import { Rubik } from 'next/font/google'
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import "./globals.css";
 
 const chivo = Chivo({
@@ -29,7 +30,10 @@ export default function RootLayout({ children }) {
       <meta property="og:title" content="Portafolio - Oscar M Alvarez G" />
       <meta property="og:description" content="Descripción corta sobre ti o tus servicios" />
       <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
-      <body className={chivo.variable + rubik.variable}>{children}</body>
+      <body className={chivo.variable + rubik.variable}>
+        {children}
+        <SpeedInsights />
+        </body>
     </html>
   );
 }
