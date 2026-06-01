@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
       <meta property="og:title" content="Portafolio - Oscar M Alvarez G" />
       <meta property="og:description" content="Descripción corta sobre ti o tus servicios" />
       <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
-      <body className={`${chivo.variable} ${rubik.variable}`}>
+      <body className={`${chivo.variable} ${rubik.variable} bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-50 transition-colors duration-300`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <LanguageProvider>
             {children}

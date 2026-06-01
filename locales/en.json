@@ -18,5 +18,13 @@
   "status_paused": "Paused",
   "status_beta": "Beta",
   "code": "Code",
-  "private": "Private"
+  "private": "Private",
+  "title_fullstack": "Full-Stack Developer",
+  "title_software": "Software Developer",
+  "title_backend": "Backend Developer",
+  "title_junior": "Junior Developer",
+  "date_botslovers": "Jan 2024 — Present",
+  "date_avance": "Jul 2024 — Jul 2025",
+  "date_ag": "Aug 2023 — Jun 2024",
+  "date_soltic": "Jan 2023 — Jun 2023"
 }

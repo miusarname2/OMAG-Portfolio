@@ -21,15 +21,15 @@ export function ViewMain() {
         <div className="flex bg-white dark:bg-gray-800 rounded-full shadow-md border border-gray-200 dark:border-gray-700 p-1">
           <button 
             onClick={() => changeLanguage('en')}
-            className={`flex items-center justify-center px-3 py-1.5 rounded-full text-xs font-bold transition-colors ${language === 'en' ? 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/50 dark:text-indigo-300' : 'text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-700'}`}
+            className={`flex items-center justify-center space-x-1.5 px-3 py-1.5 rounded-full text-xs font-bold transition-colors ${language === 'en' ? 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/50 dark:text-indigo-300' : 'text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-700'}`}
           >
-            EN
+            <span className="text-sm leading-none">🇺🇸</span> <span>EN</span>
           </button>
           <button 
             onClick={() => changeLanguage('es')}
-            className={`flex items-center justify-center px-3 py-1.5 rounded-full text-xs font-bold transition-colors ${language === 'es' ? 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/50 dark:text-indigo-300' : 'text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-700'}`}
+            className={`flex items-center justify-center space-x-1.5 px-3 py-1.5 rounded-full text-xs font-bold transition-colors ${language === 'es' ? 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/50 dark:text-indigo-300' : 'text-gray-500 hover:bg-gray-100 dark:hover:bg-gray-700'}`}
           >
-            ES
+            <span className="text-sm leading-none">🇪🇸</span> <span>ES</span>
           </button>
         </div>
 
@@ -60,12 +60,12 @@ export function ViewMain() {
       </div>
 
       {/* Hero Section */}
-      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-700 p-8 md:p-12 lg:p-16 text-white shadow-2xl mb-16 mt-16 md:mt-0">
-        <div className="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-white opacity-10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 -mb-20 -ml-20 w-72 h-72 bg-purple-400 opacity-20 rounded-full blur-3xl"></div>
+      <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-indigo-50 via-blue-50 to-purple-100 dark:from-blue-900 dark:via-indigo-900 dark:to-purple-950 p-8 md:p-12 lg:p-16 text-slate-800 dark:text-white shadow-xl dark:shadow-2xl mb-16 mt-16 md:mt-0 transition-colors duration-300 border border-white/50 dark:border-white/10">
+        <div className="absolute top-0 right-0 -mt-20 -mr-20 w-80 h-80 bg-purple-300 dark:bg-white opacity-40 dark:opacity-5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 -mb-20 -ml-20 w-72 h-72 bg-blue-300 dark:bg-purple-400 opacity-40 dark:opacity-10 rounded-full blur-3xl"></div>
         
         <div className="relative z-10 flex flex-col md:flex-row items-center md:items-start space-y-8 md:space-y-0 md:space-x-10">
-          <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-white/20 shadow-xl flex-shrink-0">
+          <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-indigo-200 dark:border-white/20 shadow-xl flex-shrink-0">
             <img
               alt="Oscar M Alvarez G"
               className="w-full h-full object-cover"
@@ -76,27 +76,27 @@ export function ViewMain() {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-4">
               Oscar M Alvarez G
             </h1>
-            <p className="text-lg md:text-xl text-blue-100 mb-6 max-w-2xl">
+            <p className="text-lg md:text-xl text-indigo-800/80 dark:text-blue-100 mb-6 max-w-2xl font-medium">
               {t("hero_title")}
             </p>
             <div className="flex items-center justify-center md:justify-start space-x-4">
               <Link
-                className="bg-white/10 hover:bg-white/20 p-3 rounded-full backdrop-blur-sm transition-colors"
+                className="bg-white/60 hover:bg-white/80 dark:bg-white/10 dark:hover:bg-white/20 p-3 rounded-full backdrop-blur-sm transition-colors shadow-sm dark:shadow-none"
                 href="https://github.com/miusarname2"
                 target="_blank">
-                <GithubIcon className="w-6 h-6 text-white" />
+                <GithubIcon className="w-6 h-6 text-slate-700 dark:text-white" />
               </Link>
               <Link
-                className="bg-white/10 hover:bg-white/20 p-3 rounded-full backdrop-blur-sm transition-colors"
+                className="bg-white/60 hover:bg-white/80 dark:bg-white/10 dark:hover:bg-white/20 p-3 rounded-full backdrop-blur-sm transition-colors shadow-sm dark:shadow-none"
                 href="https://www.linkedin.com/in/oscar-mauricio-alvarez-g/"
                 target="_blank">
-                <LinkedinIcon className="w-6 h-6 text-white" />
+                <LinkedinIcon className="w-6 h-6 text-slate-700 dark:text-white" />
               </Link>
               <Link
-                className="bg-white/10 hover:bg-white/20 p-3 rounded-full backdrop-blur-sm transition-colors"
+                className="bg-white/60 hover:bg-white/80 dark:bg-white/10 dark:hover:bg-white/20 p-3 rounded-full backdrop-blur-sm transition-colors shadow-sm dark:shadow-none"
                 href="https://twitter.com/OscarMAlarezDev"
                 target="_blank">
-                <TwitterIcon className="w-6 h-6 text-white" />
+                <TwitterIcon className="w-6 h-6 text-slate-700 dark:text-white" />
               </Link>
             </div>
           </div>
@@ -121,33 +121,55 @@ export function ViewMain() {
       <div className="mb-20">
         <h2 className="text-3xl font-bold tracking-tight mb-8">{t("work_exp")}</h2>
         <div className="grid gap-6 md:grid-cols-2">
+          
           <div className="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-md transition-shadow">
             <div className="flex justify-between items-start mb-4">
               <div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100">Full-Stack Developer</h3>
-                <p className="text-indigo-600 dark:text-indigo-400 font-medium">Campuslands</p>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100">{t("title_fullstack")}</h3>
+                <p className="text-indigo-600 dark:text-indigo-400 font-medium">Botslovers</p>
               </div>
             </div>
             <div className="flex gap-2 text-sm text-gray-500 dark:text-gray-400 font-medium bg-gray-50 dark:bg-gray-900/50 w-fit px-3 py-1.5 rounded-lg">
-              <span>02-2023</span>
-              <span>—</span>
-              <span>04-2024</span>
+              {t("date_botslovers")}
             </div>
           </div>
           
           <div className="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-md transition-shadow">
             <div className="flex justify-between items-start mb-4">
               <div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100">Full-Stack Developer</h3>
-                <p className="text-indigo-600 dark:text-indigo-400 font-medium">AG Consultores & Asociados</p>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100">{t("title_software")}</h3>
+                <p className="text-indigo-600 dark:text-indigo-400 font-medium">Corporacion Avance</p>
               </div>
             </div>
             <div className="flex gap-2 text-sm text-gray-500 dark:text-gray-400 font-medium bg-gray-50 dark:bg-gray-900/50 w-fit px-3 py-1.5 rounded-lg">
-              <span>06-2023</span>
-              <span>—</span>
-              <span>12-2024</span>
+              {t("date_avance")}
             </div>
           </div>
+          
+          <div className="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-md transition-shadow">
+            <div className="flex justify-between items-start mb-4">
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100">{t("title_backend")}</h3>
+                <p className="text-indigo-600 dark:text-indigo-400 font-medium">AG Consultores y Asociados</p>
+              </div>
+            </div>
+            <div className="flex gap-2 text-sm text-gray-500 dark:text-gray-400 font-medium bg-gray-50 dark:bg-gray-900/50 w-fit px-3 py-1.5 rounded-lg">
+              {t("date_ag")}
+            </div>
+          </div>
+          
+          <div className="p-6 bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-md transition-shadow">
+            <div className="flex justify-between items-start mb-4">
+              <div>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100">{t("title_junior")}</h3>
+                <p className="text-indigo-600 dark:text-indigo-400 font-medium">Soltic</p>
+              </div>
+            </div>
+            <div className="flex gap-2 text-sm text-gray-500 dark:text-gray-400 font-medium bg-gray-50 dark:bg-gray-900/50 w-fit px-3 py-1.5 rounded-lg">
+              {t("date_soltic")}
+            </div>
+          </div>
+
         </div>
       </div>
 
