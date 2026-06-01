@@ -1,0 +1,22 @@
+{
+  "hero_title": "Full-Stack Developer passionate about creating beautiful, scalable, and user-centric applications.",
+  "core_tech": "Core Technologies",
+  "work_exp": "Work Experience",
+  "featured_proj": "Featured Projects",
+  "url_shorten_desc": "A simple, fast, and scalable URL shortener built with a modern tech stack.",
+  "client_admin_desc": "Application to manage customers with optional data validation functionalities and full CRUD features.",
+  "viaje_col_desc": "A RESTful API to consult air routes across Colombia with documentation integrated via Swagger.",
+  "seismic_desc": "A full-stack application showing the latest earthquakes in the USA with robust data visualization.",
+  "tablontask_desc": "A feature-rich Trello clone built to offer a seamless project management experience.",
+  "swift_ide_desc": "A cross-platform IDE that allows you to create, develop, test, and deploy software with Swift.",
+  "serviflow_desc": "Platform to manage a business and keep accounting, featuring multiple comprehensive dashboards.",
+  "gardenapp_desc": "Mobile app connected to a device to monitor plant conditions such as acidity, hydration, and more.",
+  "dian_desc": "Optimizes long and complex Excel accounting files to generate data ready for DIAN withholding tax presentation.",
+  "status_finished": "Finished",
+  "status_adapting": "Adapting Deploy",
+  "status_in_dev": "In Development",
+  "status_paused": "Paused",
+  "status_beta": "Beta",
+  "code": "Code",
+  "private": "Private"
+}

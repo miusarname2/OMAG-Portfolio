@@ -2,6 +2,8 @@ import { Inter } from "next/font/google";
 import { Chivo } from 'next/font/google'
 import { Rubik } from 'next/font/google'
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { ThemeProvider } from "@/components/theme-provider";
+import { LanguageProvider } from "@/components/language-provider";
 import "./globals.css";
 
 const chivo = Chivo({
@@ -26,14 +28,18 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <meta property="og:title" content="Portafolio - Oscar M Alvarez G" />
       <meta property="og:description" content="Descripción corta sobre ti o tus servicios" />
       <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
-      <body className={chivo.variable + rubik.variable}>
-        {children}
-        <SpeedInsights />
-        </body>
+      <body className={`${chivo.variable} ${rubik.variable}`}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <LanguageProvider>
+            {children}
+            <SpeedInsights />
+          </LanguageProvider>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

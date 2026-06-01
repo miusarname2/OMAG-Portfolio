@@ -1,0 +1,22 @@
+{
+  "hero_title": "Desarrollador Full-Stack apasionado por crear aplicaciones hermosas, escalables y centradas en el usuario.",
+  "core_tech": "Habilidades Clave",
+  "work_exp": "Experiencia Laboral",
+  "featured_proj": "Proyectos Destacados",
+  "url_shorten_desc": "Un acortador de URLs simple, rápido y escalable construido con tecnologías modernas.",
+  "client_admin_desc": "Aplicación para gestionar clientes con funcionalidades opcionales de validación de datos y CRUD completo.",
+  "viaje_col_desc": "Una API RESTful para consultar rutas aéreas por Colombia con documentación integrada vía Swagger.",
+  "seismic_desc": "Una aplicación full-stack que muestra los últimos terremotos en los EE.UU. con robusta visualización de datos.",
+  "tablontask_desc": "Un clon de Trello rico en funcionalidades construido para ofrecer una experiencia fluida de gestión de proyectos.",
+  "swift_ide_desc": "Un IDE multiplataforma que te permite crear, desarrollar, probar y desplegar software con Swift.",
+  "serviflow_desc": "Plataforma para administrar un negocio y llevar la contabilidad, presentando múltiples y completos tableros (dashboards).",
+  "gardenapp_desc": "Aplicación móvil conectada a un dispositivo para monitorear las condiciones de las plantas como acidez, hidratación y más.",
+  "dian_desc": "Optimiza archivos contables de Excel largos y complejos para generar datos listos para la presentación de retención en la fuente (DIAN).",
+  "status_finished": "Finalizado",
+  "status_adapting": "Adaptando Deploy",
+  "status_in_dev": "En Desarrollo",
+  "status_paused": "Pausado",
+  "status_beta": "Beta",
+  "code": "Código",
+  "private": "Privado"
+}
