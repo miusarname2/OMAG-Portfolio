@@ -88,7 +88,7 @@ export function ViewMain() {
               </Link>
               <Link
                 className="bg-white/60 hover:bg-white/80 dark:bg-white/10 dark:hover:bg-white/20 p-3 rounded-full backdrop-blur-sm transition-colors shadow-sm dark:shadow-none"
-                href="https://www.linkedin.com/in/oscar-mauricio-alvarez-g/"
+                href="https://www.linkedin.com/in/oscar-mauricio-alvarez-dev"
                 target="_blank">
                 <LinkedinIcon className="w-6 h-6 text-slate-700 dark:text-white" />
               </Link>
