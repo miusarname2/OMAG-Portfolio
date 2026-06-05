@@ -1,0 +1,30 @@
+{
+  "name": "Oscar M Alvarez G - Portafolio",
+  "short_name": "Portfolio Oscar",
+  "description": "Portafolio profesional de Oscar M Alvarez G. Descubre mis proyectos, habilidades y experiencia en desarrollo web.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f172a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
