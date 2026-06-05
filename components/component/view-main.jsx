@@ -422,7 +422,7 @@ export function ViewMain() {
           {/* Project 9: DIAN Excel Optimizer */}
           <div className="group flex flex-col bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 dark:border-gray-700">
             <div className="w-full aspect-[4/3] overflow-hidden bg-gray-100 dark:bg-gray-900 relative">
-              <img alt="DIAN Excel Optimizer" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="/placeholder.svg" />
+              <img alt="DIAN Excel Optimizer" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="/Unifier.png" />
             </div>
             <div className="p-6 flex flex-col flex-1">
               <h3 className="text-xl font-bold mb-3">DIAN Excel Optimizer</h3>
