@@ -284,7 +284,7 @@ export function ViewMain() {
           {/* Project 3: Viaje por Colombia */}
           <div className="group flex flex-col bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 dark:border-gray-700">
             <div className="w-full aspect-[4/3] overflow-hidden bg-gray-100 dark:bg-gray-900 relative">
-              <a href="https://test-biintelli.onrender.com/api-docs/" target="_blank" rel="noopener noreferrer">
+              <a href="https://viajeporcolombiaapi.projects.omag.cloud/api-docs" target="_blank" rel="noopener noreferrer">
                 <img alt="Viaje por Colombia" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="/Flight.svg" />
               </a>
             </div>
