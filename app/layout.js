@@ -30,13 +30,13 @@ export const metadata = {
   viewport: "width=device-width, initial-scale=1.0, maximum-scale=5.0",
   openGraph: {
     type: "website",
-    url: "https://tudominio.com",
+    url: "https://portfolio.omag.cloud",
     title: "Oscar M Alvarez G - Portafolio & Proyectos",
     description: "Portafolio profesional de Oscar M Alvarez G. Descubre mis proyectos, habilidades y experiencia en desarrollo web.",
     siteName: "Portfolio Oscar M Alvarez G",
     images: [
       {
-        url: "https://tudominio.com/og-image.jpg",
+        url: "https://portfolio.omag.cloud/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Oscar M Alvarez G - Portafolio",
@@ -47,11 +47,10 @@ export const metadata = {
     card: "summary_large_image",
     title: "Oscar M Alvarez G - Portafolio & Proyectos",
     description: "Portafolio profesional de Oscar M Alvarez G. Descubre mis proyectos, habilidades y experiencia en desarrollo web.",
-    images: ["https://tudominio.com/twitter-image.jpg"],
-    creator: "@tususuariotwitter",
+    creator: "@OscarMAlarezDev",
   },
   alternates: {
-    canonical: "https://tudominio.com",
+    canonical: "https://portfolio.omag.cloud",
   },
 };
 

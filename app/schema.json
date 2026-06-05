@@ -2,13 +2,13 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Oscar M Alvarez G",
-  "url": "https://tudominio.com",
-  "image": "https://tudominio.com/profile-image.jpg",
+  "url": "https://portfolio.omag.cloud",
+  "image": "https://portfolio.omag.cloud/profile-image.jpg",
   "description": "Desarrollador web profesional con experiencia en React, Next.js y tecnologías modernas",
   "sameAs": [
-    "https://twitter.com/tususuariotwitter",
-    "https://linkedin.com/in/tuusuariolinkedin",
-    "https://github.com/tuusuariogithub"
+    "https://x.com/OscarMAlarezDev",
+    "https://www.linkedin.com/in/oscar-mauricio-alvarez-dev",
+    "https://github.com/miusarname2"
   ],
   "jobTitle": "Desarrollador Web",
   "worksFor": {
