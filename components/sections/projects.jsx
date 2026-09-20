@@ -59,7 +59,7 @@ export function ProjectsSection() {
     {
       id: "tablontask",
       title: "TablonTask",
-      image: "/placeholder.svg",
+      image: "/TablonTask Image.png",
       link: null,
       github: "http://github.com/miusarname2/Trello-Clone",
       descKey: "tablontask_desc",
@@ -81,7 +81,7 @@ export function ProjectsSection() {
     {
       id: "serviflow",
       title: "Serviflow - Maintenance",
-      image: "/placeholder.svg",
+      image: "/ServiFlow Image.png",
       link: null,
       github: "https://github.com/CloudPulses/serviflow-mantenimiento",
       descKey: "serviflow_desc",
@@ -169,7 +169,7 @@ export function ProjectsSection() {
     {
       id: "fravicol-dashboard",
       title: "Datos Fravicol Dashboard",
-      image: "/placeholder.svg",
+      image: "/Warning.svg",
       link: null,
       github: null,
       descKey: "fravicol_desc",
@@ -194,7 +194,7 @@ export function ProjectsSection() {
     {
       id: "learning-c",
       title: "Learning C",
-      image: "/placeholder.svg",
+      image: "/C_Programming_Language.svg.webp",
       link: null,
       github: "https://github.com/miusarname2/Learning-C",
       descKey: "learning_c_desc",

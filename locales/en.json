@@ -38,5 +38,5 @@
   "firstdesktop_desc": "Practice desktop app built with Kotlin and Compose Multiplatform. Shows simple state management and comes ready for native installers packaging.",
   "parcialpoo_desc": "A desktop application in Java Swing that validates numbers and executes operations on them, applying OOP principles.",
   "wordtopdf_desc": "A REST API with Node.js that converts Word documents to PDF using LibreOffice, ready to be integrated into any application.",
-  "fravicol_desc": "An interactive dashboard in React showing profitability, inventory turnover, and audit alerts for a clothing store chain."
+  "fravicol_desc": "An interactive dashboard in React showing profitability, inventory turnover, and audit alerts for a clothing store chain. (For security reasons, screenshots are omitted as they contain sensitive information)."
 }

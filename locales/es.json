@@ -38,5 +38,5 @@
   "firstdesktop_desc": "App de escritorio de práctica hecha con Kotlin y Compose Multiplatform. Muestra un estado simple y empaquetado listo para instaladores nativos.",
   "parcialpoo_desc": "Una aplicación de escritorio en Java Swing que valida números y ejecuta operaciones sobre ellos, aplicando los pilares de la POO.",
   "wordtopdf_desc": "Una API REST con Node.js que convierte documentos de Word a PDF usando LibreOffice, lista para integrarse en cualquier aplicación.",
-  "fravicol_desc": "Un dashboard interactivo en React que muestra la rentabilidad, la rotación de inventario y las alertas de auditoría de una cadena de almacenes de ropa."
+  "fravicol_desc": "Un dashboard interactivo en React que muestra la rentabilidad, la rotación de inventario y las alertas de auditoría de una cadena de almacenes de ropa. (Por razones de seguridad no se muestran imágenes, pues contienen información sensible)."
 }
