@@ -43,5 +43,17 @@
   "login_campus_desc": "A React web application featuring user login that validates credentials against the Rappi Campus API.",
   "citas_mongo_desc": "A REST API with JWT authentication to manage medical appointments, doctors, and users for a clinic on MongoDB Atlas.",
   "taller_react_desc": "A React web app featuring ten programming logic exercises, each as a component with its own route.",
-  "exposicion_react_desc": "A code-guided reference covering class component lifecycle methods in React."
+  "exposicion_react_desc": "A code-guided reference covering class component lifecycle methods in React.",
+  "nav_blog": "Blog",
+  "nav_home": "Home",
+  "blog_title": "Blog & Articles",
+  "blog_subtitle": "Thoughts, tutorials, and insights on software development, architecture, and technology.",
+  "search_posts": "Search articles...",
+  "read_more": "Read article",
+  "back_to_blog": "Back to Blog",
+  "back_to_home": "Back to Home",
+  "all_categories": "All categories",
+  "no_posts_found": "No articles found matching your search.",
+  "share_article": "Share",
+  "link_copied": "Link copied!"
 }
