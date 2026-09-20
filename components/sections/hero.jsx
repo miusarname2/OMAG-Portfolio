@@ -2,13 +2,20 @@
 
 import { motion } from "framer-motion";
 import { useLanguage } from "@/components/language-provider";
+import { useRole } from "@/components/role-provider";
 import Link from "next/link";
 import { GithubIcon, LinkedinIcon, TwitterIcon } from "@/components/icons";
 
 export function HeroSection() {
   const { t, mounted } = useLanguage();
+  const { role } = useRole();
 
   if (!mounted) return null;
+
+  const cvFile = role === 'ai' ? '/Cvs/Oscar M Alvarez G .pdf' : '/Cvs/Oscar M Alvarez G Full Stack.pdf';
+  const roleSubtitle = role === 'ai' 
+    ? 'AI Engineer | Machine Learning | Data Science'
+    : t("hero_title");
 
   return (
     <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden py-20 px-4 md:px-8">
@@ -50,7 +57,7 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-lg md:text-xl text-slate-600 dark:text-slate-400 mb-8 max-w-2xl mx-auto md:mx-0 font-medium leading-relaxed"
           >
-            {t("hero_title")}
+            {roleSubtitle}
           </motion.p>
           
           <motion.div 
@@ -59,6 +66,13 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="flex items-center justify-center md:justify-start gap-4"
           >
+            <Link
+              className="group flex items-center justify-center px-6 h-12 bg-indigo-600 text-white font-semibold rounded-full hover:bg-indigo-700 transition-all duration-300 hover:scale-105 shadow-md shadow-indigo-500/20"
+              href={cvFile}
+              target="_blank"
+            >
+              Descargar CV
+            </Link>
             <Link
               className="group flex items-center justify-center w-12 h-12 bg-white dark:bg-white/5 border border-slate-200 dark:border-white/10 rounded-full hover:bg-slate-50 dark:hover:bg-white/10 hover:border-indigo-500/50 transition-all duration-300 hover:scale-110 hover:-translate-y-1 shadow-sm hover:shadow-indigo-500/25"
               href="https://github.com/miusarname2"

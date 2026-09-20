@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useLanguage } from "@/components/language-provider";
+import { useRole } from "@/components/role-provider";
 import {
   siReact,
   siNextdotjs,
@@ -15,9 +16,17 @@ import {
   siMongodb,
   siTailwindcss,
   siDocker,
+  siTensorflow,
+  siPytorch,
+  siScikitlearn,
+  siPandas,
+  siKeras,
+  siJupyter,
+  siOpenai
 } from "simple-icons";
 
 function SimpleIcon({ icon, className = "" }) {
+  if (!icon) return null; // Fallback just in case simple-icons doesn't export one
   return (
     <svg
       role="img"
@@ -31,13 +40,12 @@ function SimpleIcon({ icon, className = "" }) {
   );
 }
 
-const skills = [
+const fsSkills = [
   { name: "React", icon: siReact },
   { name: "Next.js", icon: siNextdotjs },
   { name: "Node.js", icon: siNodedotjs },
   { name: "TypeScript", icon: siTypescript },
   { name: "Python", icon: siPython },
-  { name: "React Native", icon: siReact },
   { name: "PHP", icon: siPhp },
   { name: "Laravel", icon: siLaravel },
   { name: "MySQL", icon: siMysql },
@@ -47,10 +55,27 @@ const skills = [
   { name: "Docker", icon: siDocker },
 ];
 
+const aiSkills = [
+  { name: "Python", icon: siPython },
+  { name: "TensorFlow", icon: siTensorflow },
+  { name: "PyTorch", icon: siPytorch },
+  { name: "Scikit-Learn", icon: siScikitlearn },
+  { name: "Pandas", icon: siPandas },
+  { name: "Keras", icon: siKeras },
+  { name: "Jupyter", icon: siJupyter },
+  { name: "OpenAI", icon: siOpenai },
+  { name: "PostgreSQL", icon: siPostgresql },
+  { name: "MongoDB", icon: siMongodb },
+  { name: "Docker", icon: siDocker },
+];
+
 export function SkillsSection() {
   const { t, mounted } = useLanguage();
+  const { role } = useRole();
 
   if (!mounted) return null;
+
+  const currentSkills = role === 'ai' ? aiSkills : fsSkills;
 
   return (
     <section className="relative py-24 overflow-hidden">
@@ -71,7 +96,7 @@ export function SkillsSection() {
 
       <div className="relative w-full flex overflow-hidden group">
         <div className="flex animate-marquee whitespace-nowrap gap-6 py-4 items-center group-hover:[animation-play-state:paused] transition-all duration-300">
-          {[...skills, ...skills, ...skills].map((skill, index) => (
+          {[...currentSkills, ...currentSkills, ...currentSkills].map((skill, index) => (
             <motion.div
               key={`skill-${index}`}
               whileHover={{ y: -5, scale: 1.05 }}

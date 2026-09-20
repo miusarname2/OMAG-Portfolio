@@ -2,14 +2,16 @@
 
 import { motion } from "framer-motion";
 import { useLanguage } from "@/components/language-provider";
+import { useRole } from "@/components/role-provider";
 import { GithubIcon } from "@/components/icons";
 
 export function ProjectsSection() {
   const { t, mounted } = useLanguage();
+  const { role } = useRole();
 
   if (!mounted) return null;
 
-  const projects = [
+  const fsProjects = [
     {
       id: "url-shorten",
       title: "Url Shorten",
@@ -110,6 +112,44 @@ export function ProjectsSection() {
       tags: ["Python", "Pandas", "Flet"]
     }
   ];
+
+  const aiProjects = [
+    {
+      id: "ai-chatbot",
+      title: "AI Support Chatbot",
+      image: "/placeholder.svg",
+      link: null,
+      github: "https://github.com/miusarname2/ai-chatbot",
+      descKey: "AI-powered customer support chatbot using OpenAI API and RAG architecture.",
+      statusKey: "status_finished",
+      statusClasses: "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400",
+      tags: ["Python", "OpenAI", "LangChain", "VectorDB"]
+    },
+    {
+      id: "sales-forecasting",
+      title: "Sales Forecasting Model",
+      image: "/placeholder.svg",
+      link: null,
+      github: null,
+      descKey: "Predictive model for retail sales using time-series analysis and XGBoost.",
+      statusKey: "status_finished",
+      statusClasses: "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400",
+      tags: ["Python", "Pandas", "XGBoost", "Scikit-Learn"]
+    },
+    {
+      id: "image-classifier",
+      title: "Medical Image Classifier",
+      image: "/placeholder.svg",
+      link: null,
+      github: null,
+      descKey: "Deep learning model built with PyTorch for classifying X-ray images.",
+      statusKey: "status_in_dev",
+      statusClasses: "bg-blue-100 dark:bg-blue-500/20 text-blue-700 dark:text-blue-400",
+      tags: ["PyTorch", "Computer Vision", "CNN"]
+    }
+  ];
+
+  const projects = role === 'ai' ? aiProjects : fsProjects;
 
   return (
     <section className="relative py-24">

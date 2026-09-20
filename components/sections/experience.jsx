@@ -2,13 +2,15 @@
 
 import { motion } from "framer-motion";
 import { useLanguage } from "@/components/language-provider";
+import { useRole } from "@/components/role-provider";
 
 export function ExperienceSection() {
   const { t, mounted } = useLanguage();
+  const { role } = useRole();
 
   if (!mounted) return null;
 
-  const experiences = [
+  const fsExperiences = [
     {
       id: "botslovers",
       titleKey: "title_fullstack",
@@ -34,6 +36,35 @@ export function ExperienceSection() {
       dateKey: "date_soltic",
     },
   ];
+
+  const aiExperiences = [
+    {
+      id: "botslovers_ai",
+      titleKey: "AI Engineer", // Since we don't have it in translation yet, hardcode or fallback
+      company: "Botslovers",
+      dateKey: "date_botslovers",
+    },
+    {
+      id: "avance_ai",
+      titleKey: "Data Scientist",
+      company: "Corporacion Avance",
+      dateKey: "date_avance",
+    },
+    {
+      id: "ag_ai",
+      titleKey: "Machine Learning Engineer",
+      company: "AG Consultores y Asociados",
+      dateKey: "date_ag",
+    },
+    {
+      id: "soltic_ai",
+      titleKey: "Data Analyst",
+      company: "Soltic",
+      dateKey: "date_soltic",
+    },
+  ];
+
+  const experiences = role === 'ai' ? aiExperiences : fsExperiences;
 
   return (
     <section className="relative py-24">
