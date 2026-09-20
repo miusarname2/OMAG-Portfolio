@@ -26,5 +26,17 @@
   "date_botslovers": "Ene 2024 — Actualmente",
   "date_avance": "Jul 2024 — Jul 2025",
   "date_ag": "Ago 2023 — Jun 2024",
-  "date_soltic": "Ene 2023 — Jun 2023"
+  "date_soltic": "Ene 2023 — Jun 2023",
+  "learning_proj_title": "Proyectos de Tutoría y Aprendizaje",
+  "api_version_desc": "Una aplicación Express.js que demuestra tres técnicas de control de versiones de API (encabezados, parámetros de ruta y query strings) para mantener compatibilidad con versiones anteriores.",
+  "learning_c_desc": "Material didáctico por módulos para aprender C desde cero. Cubre operaciones básicas, con ejemplos, explicaciones para practicar y recursos recomendados.",
+  "landing_dev_desc": "Una página web estática alojada en AWS S3 que documenta mis primeros experimentos con almacenamiento en la nube.",
+  "bodegas_desc": "Aplicación web para gestionar inventarios de bodegas con Node.js y MongoDB. Permite CRUD completo de productos con búsquedas avanzadas.",
+  "mongo_alquiler_desc": "Una API REST con autenticación JWT que permite gestionar cuentas contables, transacciones y balances de una empresa.",
+  "proyecto_admin_desc": "API para gestionar usuarios mediante operaciones CRUD, desarrollada con Node.js y Prisma ORM.",
+  "temporal_test_desc": "Una API REST con Spring Boot y MySQL que permite gestionar un catálogo de películas con operaciones CRUD.",
+  "firstdesktop_desc": "App de escritorio de práctica hecha con Kotlin y Compose Multiplatform. Muestra un estado simple y empaquetado listo para instaladores nativos.",
+  "parcialpoo_desc": "Una aplicación de escritorio en Java Swing que valida números y ejecuta operaciones sobre ellos, aplicando los pilares de la POO.",
+  "wordtopdf_desc": "Una API REST con Node.js que convierte documentos de Word a PDF usando LibreOffice, lista para integrarse en cualquier aplicación.",
+  "fravicol_desc": "Un dashboard interactivo en React que muestra la rentabilidad, la rotación de inventario y las alertas de auditoría de una cadena de almacenes de ropa."
 }

@@ -26,5 +26,17 @@
   "date_botslovers": "Jan 2024 — Present",
   "date_avance": "Jul 2024 — Jul 2025",
   "date_ag": "Aug 2023 — Jun 2024",
-  "date_soltic": "Jan 2023 — Jun 2023"
+  "date_soltic": "Jan 2023 — Jun 2023",
+  "learning_proj_title": "Tutoring and Learning Projects",
+  "api_version_desc": "An Express.js application demonstrating three API versioning techniques (headers, path parameters, and query strings) to maintain backward compatibility.",
+  "learning_c_desc": "Modular didactic material to learn C from scratch. Covers basic operations, with examples, explanations for practice, and recommended resources.",
+  "landing_dev_desc": "A static webpage hosted on AWS S3 documenting my first experiments with cloud storage.",
+  "bodegas_desc": "Web application to manage warehouse inventories with Node.js and MongoDB. Allows full CRUD of products with advanced searches.",
+  "mongo_alquiler_desc": "A REST API with JWT authentication that allows managing accounting accounts, transactions, and balances of a company.",
+  "proyecto_admin_desc": "API to manage users through CRUD operations, developed with Node.js and Prisma ORM.",
+  "temporal_test_desc": "A REST API with Spring Boot and MySQL that allows managing a movie catalog with CRUD operations.",
+  "firstdesktop_desc": "Practice desktop app built with Kotlin and Compose Multiplatform. Shows simple state management and comes ready for native installers packaging.",
+  "parcialpoo_desc": "A desktop application in Java Swing that validates numbers and executes operations on them, applying OOP principles.",
+  "wordtopdf_desc": "A REST API with Node.js that converts Word documents to PDF using LibreOffice, ready to be integrated into any application.",
+  "fravicol_desc": "An interactive dashboard in React showing profitability, inventory turnover, and audit alerts for a clothing store chain."
 }
