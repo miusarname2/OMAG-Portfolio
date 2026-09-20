@@ -38,5 +38,10 @@
   "firstdesktop_desc": "App de escritorio de práctica hecha con Kotlin y Compose Multiplatform. Muestra un estado simple y empaquetado listo para instaladores nativos.",
   "parcialpoo_desc": "Una aplicación de escritorio en Java Swing que valida números y ejecuta operaciones sobre ellos, aplicando los pilares de la POO.",
   "wordtopdf_desc": "Una API REST con Node.js que convierte documentos de Word a PDF usando LibreOffice, lista para integrarse en cualquier aplicación.",
-  "fravicol_desc": "Un dashboard interactivo en React que muestra la rentabilidad, la rotación de inventario y las alertas de auditoría de una cadena de almacenes de ropa. (Por razones de seguridad no se muestran imágenes, pues contienen información sensible)."
+  "fravicol_desc": "Un dashboard interactivo en React que muestra la rentabilidad, la rotación de inventario y las alertas de auditoría de una cadena de almacenes de ropa. (Por razones de seguridad no se muestran imágenes, pues contienen información sensible).",
+  "udemy_pirata_desc": "Una aplicación full-stack que ofrece cursos en video con reproductor por secciones, comentarios y autenticación, construida con React y Express.",
+  "login_campus_desc": "Una aplicación web en React con inicio de sesión que valida a los usuarios contra la API de Rappi Campus.",
+  "citas_mongo_desc": "Una API REST con autenticación JWT que permite gestionar citas médicas, doctores y usuarios de una clínica sobre MongoDB Atlas.",
+  "taller_react_desc": "Una aplicación web en React con diez ejercicios de lógica de programación, cada uno como un componente con su propia ruta.",
+  "exposicion_react_desc": "Una guía con ejemplos de código sobre los métodos de ciclo de vida de los componentes de clase en React."
 }

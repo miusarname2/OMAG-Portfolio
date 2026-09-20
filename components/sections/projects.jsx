@@ -176,6 +176,39 @@ export function ProjectsSection() {
       statusKey: "status_finished",
       statusClasses: "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400",
       tags: ["React", "Dashboard", "KPIs"]
+    },
+    {
+      id: "udemy-pirata",
+      title: "Udemy Platform",
+      image: "/placeholder.svg",
+      link: null,
+      github: "https://github.com/miusarname2/Udemy-pirata",
+      descKey: "udemy_pirata_desc",
+      statusKey: "status_finished",
+      statusClasses: "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400",
+      tags: ["React", "Express", "MongoDB", "Node.js"]
+    },
+    {
+      id: "login-campus",
+      title: "Login Rappi Campus",
+      image: "/placeholder.svg",
+      link: null,
+      github: "https://github.com/miusarname2/loginCampus",
+      descKey: "login_campus_desc",
+      statusKey: "status_finished",
+      statusClasses: "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400",
+      tags: ["React", "Tailwind", "REST API"]
+    },
+    {
+      id: "citas-mongo",
+      title: "Citas Médicas Mongo API",
+      image: "/api-backend.svg",
+      link: null,
+      github: "https://github.com/miusarname2/CitasMongo",
+      descKey: "citas_mongo_desc",
+      statusKey: "status_finished",
+      statusClasses: "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400",
+      tags: ["Node.js", "Express", "MongoDB", "JWT"]
     }
   ];
 
@@ -234,6 +267,28 @@ export function ProjectsSection() {
       statusKey: "status_finished",
       statusClasses: "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400",
       tags: ["Java", "Swing", "OOP"]
+    },
+    {
+      id: "taller-react",
+      title: "Taller 2 React",
+      image: "/placeholder.svg",
+      link: null,
+      github: "https://github.com/miusarname2/Taller-2_react",
+      descKey: "taller_react_desc",
+      statusKey: "status_finished",
+      statusClasses: "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400",
+      tags: ["React", "JavaScript", "Logic"]
+    },
+    {
+      id: "exposicion-react",
+      title: "React Lifecycle Methods",
+      image: "/placeholder.svg",
+      link: null,
+      github: "https://github.com/miusarname2/exposicion-con-react",
+      descKey: "exposicion_react_desc",
+      statusKey: "status_finished",
+      statusClasses: "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400",
+      tags: ["React", "Education", "Lifecycle"]
     }
   ];
 

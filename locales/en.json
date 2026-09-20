@@ -38,5 +38,10 @@
   "firstdesktop_desc": "Practice desktop app built with Kotlin and Compose Multiplatform. Shows simple state management and comes ready for native installers packaging.",
   "parcialpoo_desc": "A desktop application in Java Swing that validates numbers and executes operations on them, applying OOP principles.",
   "wordtopdf_desc": "A REST API with Node.js that converts Word documents to PDF using LibreOffice, ready to be integrated into any application.",
-  "fravicol_desc": "An interactive dashboard in React showing profitability, inventory turnover, and audit alerts for a clothing store chain. (For security reasons, screenshots are omitted as they contain sensitive information)."
+  "fravicol_desc": "An interactive dashboard in React showing profitability, inventory turnover, and audit alerts for a clothing store chain. (For security reasons, screenshots are omitted as they contain sensitive information).",
+  "udemy_pirata_desc": "A full-stack application offering video courses with a section player, comments, and authentication, built with React and Express.",
+  "login_campus_desc": "A React web application featuring user login that validates credentials against the Rappi Campus API.",
+  "citas_mongo_desc": "A REST API with JWT authentication to manage medical appointments, doctors, and users for a clinic on MongoDB Atlas.",
+  "taller_react_desc": "A React web app featuring ten programming logic exercises, each as a component with its own route.",
+  "exposicion_react_desc": "A code-guided reference covering class component lifecycle methods in React."
 }
