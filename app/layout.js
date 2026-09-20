@@ -4,6 +4,7 @@ import { Rubik } from 'next/font/google'
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { ThemeProvider } from "@/components/theme-provider";
 import { LanguageProvider } from "@/components/language-provider";
+import { CursorSpotlight } from "@/components/cursor-spotlight";
 import "./globals.css";
 
 const chivo = Chivo({
@@ -27,7 +28,6 @@ export const metadata = {
   creator: "Oscar M Alvarez G",
   publisher: "Oscar M Alvarez G",
   robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
-  viewport: "width=device-width, initial-scale=1.0, maximum-scale=5.0",
   openGraph: {
     type: "website",
     url: "https://portfolio.omag.cloud",
@@ -56,7 +56,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es" suppressHydrationWarning>
+    <html lang="es" className="scroll-smooth" suppressHydrationWarning>
       <head>
         <meta charSet="utf-8" />
         <meta name="theme-color" content="#0f172a" />
@@ -66,9 +66,10 @@ export default function RootLayout({ children }) {
         <meta name="msapplication-TileColor" content="#0f172a" />
         <meta name="msapplication-config" content="/browserconfig.xml" />
       </head>
-      <body className={`${chivo.variable} ${rubik.variable} bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-slate-50 transition-colors duration-300`}>
+      <body className={`${chivo.variable} ${rubik.variable} bg-slate-50 dark:bg-[#0f172a] text-slate-900 dark:text-slate-200 transition-colors duration-300 relative`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <LanguageProvider>
+            <CursorSpotlight />
             {children}
             <SpeedInsights />
           </LanguageProvider>
