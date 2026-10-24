@@ -13,6 +13,17 @@ export function ProjectsSection() {
 
   const fsProjects = [
     {
+      id: "airsnap",
+      title: "AirSnap",
+      image: "/placeholder.svg",
+      link: "https://airsnap.omag.cloud/",
+      github: "https://github.com/miusarname2/AirSnap",
+      descKey: "airsnap_desc",
+      statusKey: "status_finished",
+      statusClasses: "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400",
+      tags: ["JavaScript", "MediaPipe", "Computer Vision", "HTML5 Canvas", "Web Audio API"]
+    },
+    {
       id: "url-shorten",
       title: "Url Shorten",
       image: "/url-short.svg",
@@ -293,6 +304,17 @@ export function ProjectsSection() {
   ];
 
   const aiProjects = [
+    {
+      id: "airsnap",
+      title: "AirSnap",
+      image: "/placeholder.svg",
+      link: "https://airsnap.omag.cloud/",
+      github: "https://github.com/miusarname2/AirSnap",
+      descKey: "airsnap_desc",
+      statusKey: "status_finished",
+      statusClasses: "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400",
+      tags: ["JavaScript", "MediaPipe", "Computer Vision", "HTML5 Canvas", "Web Audio API"]
+    },
     {
       id: "ai-chatbot",
       title: "AI Support Chatbot",

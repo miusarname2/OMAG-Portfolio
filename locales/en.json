@@ -3,6 +3,7 @@
   "core_tech": "Core Technologies",
   "work_exp": "Work Experience",
   "featured_proj": "Featured Projects",
+  "airsnap_desc": "An interactive jigsaw puzzle controlled with hand gestures in front of your camera. I created the web version and frontend architecture based on the desktop prototype by Alexander Santamaria Bayona and Juan David Jaimes Figueroa. It uses MediaPipe, Canvas, and the Web Audio API.",
   "url_shorten_desc": "A simple, fast, and scalable URL shortener built with a modern tech stack.",
   "client_admin_desc": "Application to manage customers with optional data validation functionalities and full CRUD features.",
   "viaje_col_desc": "A RESTful API to consult air routes across Colombia with documentation integrated via Swagger.",

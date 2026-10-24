@@ -3,6 +3,7 @@
   "core_tech": "Habilidades Clave",
   "work_exp": "Experiencia Laboral",
   "featured_proj": "Proyectos Destacados",
+  "airsnap_desc": "Rompecabezas interactivo controlado con gestos de la mano frente a la cámara. La versión web y su arquitectura frontend son de mi autoría, basadas en el prototipo de escritorio de Alexander Santamaria Bayona y Juan David Jaimes Figueroa. Usa MediaPipe, Canvas y Web Audio API.",
   "url_shorten_desc": "Un acortador de URLs simple, rápido y escalable construido con tecnologías modernas.",
   "client_admin_desc": "Aplicación para gestionar clientes con funcionalidades opcionales de validación de datos y CRUD completo.",
   "viaje_col_desc": "Una API RESTful para consultar rutas aéreas por Colombia con documentación integrada vía Swagger.",
