@@ -1,6 +1,8 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import { ExternalLink, Image as ImageIcon, X } from "lucide-react";
 import { useLanguage } from "@/components/language-provider";
 import { useRole } from "@/components/role-provider";
 import { GithubIcon } from "@/components/icons";
@@ -8,6 +10,39 @@ import { GithubIcon } from "@/components/icons";
 export function ProjectsSection() {
   const { t, mounted } = useLanguage();
   const { role } = useRole();
+  const [airSnapAction, setAirSnapAction] = useState(null);
+  const airSnapImageButtonRef = useRef(null);
+  const firstActionRef = useRef(null);
+  const actionMenuRef = useRef(null);
+
+  useEffect(() => {
+    if (!airSnapAction) return;
+
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") setAirSnapAction(null);
+    };
+
+    const handlePointerDown = (event) => {
+      if (
+        airSnapAction === "choices" &&
+        !actionMenuRef.current?.contains(event.target) &&
+        !airSnapImageButtonRef.current?.contains(event.target)
+      ) {
+        setAirSnapAction(null);
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    document.addEventListener("pointerdown", handlePointerDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+      document.removeEventListener("pointerdown", handlePointerDown);
+    };
+  }, [airSnapAction]);
+
+  useEffect(() => {
+    if (airSnapAction === "choices") firstActionRef.current?.focus();
+  }, [airSnapAction]);
 
   if (!mounted) return null;
 
@@ -379,7 +414,23 @@ export function ProjectsSection() {
               className="group flex flex-col bg-white/50 dark:bg-slate-800/30 backdrop-blur-sm rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border border-slate-200 dark:border-white/5"
             >
               <div className="w-full aspect-[4/3] overflow-hidden bg-slate-100 dark:bg-slate-900 relative">
-                {project.link ? (
+                {project.id === "airsnap" ? (
+                  <button
+                    ref={airSnapImageButtonRef}
+                    type="button"
+                    onClick={() => setAirSnapAction("choices")}
+                    aria-label={t("airsnap_open_options")}
+                    aria-haspopup="menu"
+                    aria-expanded={airSnapAction === "choices"}
+                    className="block h-full w-full cursor-pointer"
+                  >
+                    <img
+                      alt={project.title}
+                      className="h-full w-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out opacity-90 group-hover:opacity-100"
+                      src={project.image}
+                    />
+                  </button>
+                ) : project.link ? (
                   <a href={project.link} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
                     <img 
                       alt={project.title} 
@@ -394,7 +445,40 @@ export function ProjectsSection() {
                     src={project.image} 
                   />
                 )}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                {project.id === "airsnap" && airSnapAction === "choices" && (
+                  <div
+                    ref={actionMenuRef}
+                    role="menu"
+                    aria-label={t("airsnap_open_options")}
+                    className="absolute left-3 top-3 z-20 w-[min(18rem,calc(100%-1.5rem))] overflow-hidden rounded-lg border border-white/10 bg-[#202124] py-1 text-sm text-white shadow-2xl shadow-black/50"
+                  >
+                    <div className="border-b border-white/10 px-4 py-2 text-xs font-medium text-slate-400">
+                      AirSnap
+                    </div>
+                    <button
+                      ref={firstActionRef}
+                      role="menuitem"
+                      type="button"
+                      onClick={() => setAirSnapAction("image")}
+                      className="flex w-full items-center gap-3 px-4 py-2.5 text-left hover:bg-white/10 focus:bg-white/10 focus:outline-none"
+                    >
+                      <ImageIcon className="h-4 w-4 text-slate-300" />
+                      {t("airsnap_view_image")}
+                    </button>
+                    <a
+                      role="menuitem"
+                      href="https://airsnap.omag.cloud/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => setAirSnapAction(null)}
+                      className="flex items-center gap-3 px-4 py-2.5 hover:bg-white/10 focus:bg-white/10 focus:outline-none"
+                    >
+                      <ExternalLink className="h-4 w-4 text-slate-300" />
+                      {t("airsnap_open_project")}
+                    </a>
+                  </div>
+                )}
               </div>
 
               <div className="p-6 flex flex-col flex-1 relative z-10 bg-white dark:bg-transparent">
@@ -514,6 +598,40 @@ export function ProjectsSection() {
                 </div>
               </motion.div>
             ))}
+          </div>
+        </div>
+      )}
+
+      {airSnapAction === "image" && (
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/70 p-4 backdrop-blur-sm"
+          onClick={() => setAirSnapAction(null)}
+        >
+          <div
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="airsnap-dialog-title"
+            className="w-full max-w-5xl overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xl dark:border-white/10 dark:bg-slate-900"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <div className="flex items-center justify-between border-b border-slate-200 px-4 py-3 dark:border-white/10">
+              <h3 id="airsnap-dialog-title" className="font-semibold text-slate-900 dark:text-white">
+                AirSnap
+              </h3>
+              <button
+                type="button"
+                onClick={() => setAirSnapAction(null)}
+                aria-label={t("close")}
+                className="rounded-lg p-2 text-slate-500 transition-colors hover:bg-slate-100 hover:text-slate-900 dark:hover:bg-white/10 dark:hover:text-white"
+              >
+                <X className="h-5 w-5" />
+              </button>
+            </div>
+            <img
+              src="/airsnap.png"
+              alt={t("airsnap_project_image")}
+              className="max-h-[80vh] w-full object-contain"
+            />
           </div>
         </div>
       )}
