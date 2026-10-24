@@ -15,7 +15,7 @@ export function ProjectsSection() {
     {
       id: "airsnap",
       title: "AirSnap",
-      image: "/placeholder.svg",
+      image: "/airsnap.png",
       link: "https://airsnap.omag.cloud/",
       github: "https://github.com/miusarname2/AirSnap",
       descKey: "airsnap_desc",
@@ -191,7 +191,7 @@ export function ProjectsSection() {
     {
       id: "udemy-pirata",
       title: "Udemy Platform",
-      image: "/placeholder.svg",
+      image: "/airsnap.png",
       link: null,
       github: "https://github.com/miusarname2/Udemy-pirata",
       descKey: "udemy_pirata_desc",
