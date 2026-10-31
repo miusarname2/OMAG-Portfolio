@@ -269,28 +269,6 @@ export function ProjectsSection() {
       statusKey: "status_finished",
       statusClasses: "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400",
       tags: ["Java", "Swing", "OOP"]
-    },
-    {
-      id: "taller-react",
-      title: "Taller 2 React",
-      image: "/placeholder.svg",
-      link: null,
-      github: "https://github.com/miusarname2/Taller-2_react",
-      descKey: "taller_react_desc",
-      statusKey: "status_finished",
-      statusClasses: "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400",
-      tags: ["React", "JavaScript", "Logic"]
-    },
-    {
-      id: "exposicion-react",
-      title: "React Lifecycle Methods",
-      image: "/placeholder.svg",
-      link: null,
-      github: "https://github.com/miusarname2/exposicion-con-react",
-      descKey: "exposicion_react_desc",
-      statusKey: "status_finished",
-      statusClasses: "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400",
-      tags: ["React", "Education", "Lifecycle"]
     }
   ];
 
