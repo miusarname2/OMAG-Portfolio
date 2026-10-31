@@ -202,28 +202,6 @@ export function ProjectsSection() {
       tags: ["Node.js", "Express", "REST API"]
     },
     {
-      id: "udemy-pirata",
-      title: "Udemy Platform",
-      image: "/placeholder.svg",
-      link: null,
-      github: "https://github.com/miusarname2/Udemy-pirata",
-      descKey: "udemy_pirata_desc",
-      statusKey: "status_finished",
-      statusClasses: "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400",
-      tags: ["React", "Express", "MongoDB", "Node.js"]
-    },
-    {
-      id: "login-campus",
-      title: "Login Rappi Campus",
-      image: "/placeholder.svg",
-      link: null,
-      github: "https://github.com/miusarname2/loginCampus",
-      descKey: "login_campus_desc",
-      statusKey: "status_finished",
-      statusClasses: "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400",
-      tags: ["React", "Tailwind", "REST API"]
-    },
-    {
       id: "citas-mongo",
       title: "Citas Médicas Mongo API",
       image: "/api-backend.svg",
