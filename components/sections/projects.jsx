@@ -262,7 +262,7 @@ export function ProjectsSection() {
     {
       id: "parcial-poo",
       title: "POO Parcial Java",
-      image: "/placeholder.svg",
+      image: "/ParcialPoo.png",
       link: null,
       github: null,
       descKey: "parcialpoo_desc",
