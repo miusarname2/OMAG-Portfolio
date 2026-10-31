@@ -114,17 +114,6 @@ export function ProjectsSection() {
       tags: ["Next.js", "Tailwind", "C# .NET", "SQLServer"]
     },
     {
-      id: "swiftide",
-      title: "Swift IDE (Unnamed)",
-      image: "/Warning.svg",
-      link: null,
-      github: null,
-      descKey: "swift_ide_desc",
-      statusKey: "status_paused",
-      statusClasses: "bg-orange-100 dark:bg-orange-500/20 text-orange-700 dark:text-orange-400",
-      tags: ["Tauri", "React", "Rust"]
-    },
-    {
       id: "serviflow",
       title: "Serviflow - Maintenance",
       image: "/ServiFlow Image.png",
@@ -211,17 +200,6 @@ export function ProjectsSection() {
       statusKey: "status_finished",
       statusClasses: "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400",
       tags: ["Node.js", "Express", "REST API"]
-    },
-    {
-      id: "fravicol-dashboard",
-      title: "Datos Fravicol Dashboard",
-      image: "/Warning.svg",
-      link: null,
-      github: null,
-      descKey: "fravicol_desc",
-      statusKey: "status_finished",
-      statusClasses: "bg-emerald-100 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400",
-      tags: ["React", "Dashboard", "KPIs"]
     },
     {
       id: "udemy-pirata",
